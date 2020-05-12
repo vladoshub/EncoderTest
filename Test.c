@@ -25,7 +25,7 @@ timevalToDouble ()
 void ISR_A(){
 if(Coordinate!=0 && start){
    Start=false;
-   gettimeofday (&stop, NULL);
+   gettimeofday (&start, NULL);
 }
 if (digitalRead(24)){
 Coordinate++;
